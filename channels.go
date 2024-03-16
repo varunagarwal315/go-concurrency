@@ -1,5 +1,7 @@
 package main
 
+import "context"
+
 func runChannel() {
   var ch <-interface{}
   ch := make(ch, 0)
@@ -11,4 +13,8 @@ func trySelect(done <-struct{}) int64 {
      val, ok := <-done
   }
   return 0
+}
+
+func newCtx() context.Context {
+  return context.Context()
 }
