@@ -1,6 +1,9 @@
 package main
 
-import "context"
+import (
+  "context"
+  "fmt"
+)
 
 func runChannel() {
   var ch <-interface{}
@@ -9,9 +12,14 @@ func runChannel() {
 }
 
 func trySelect(done <-struct{}) int64 {
-  select {
-     val, ok := <-done
+  for {
+    select {
+       val, ok := <-done
+       default:
+    }
+    fmt.Println("Looping...")
   }
+
   return 0
 }
 
