@@ -18,7 +18,7 @@ func trySelect(done <-struct{}) int64 {
        default:
        fmt.Println("Looping from default:")
     }
-    fmt.Println("Looping...")
+    fmt.Println("Looping.....")
   }
 
   return 0
