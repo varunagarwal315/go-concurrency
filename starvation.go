@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// Result is used for the channels to communicate with main go routine.
 type Result struct {
 	Value int
 	Name  string
