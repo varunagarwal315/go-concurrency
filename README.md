@@ -10,3 +10,6 @@ This is a personal repository to learn and practice various golang concurrency p
 6. Generator functions
 7. Error handling across goroutines
 8. Select statement
+
+
+## Test
